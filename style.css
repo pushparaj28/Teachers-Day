@@ -1,0 +1,41 @@
+body {
+    background-color: #f0f0f0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .animated-text {
+    font-size: 24px;
+    color: #333;
+    animation: colorChange 4s infinite;
+  }
+
+  @keyframes colorChange {
+    0% {
+      color: #333;
+    }
+
+    50% {
+      color: #FF5733;
+      /* Change to your desired color */
+    }
+
+    100% {
+      color: #333;
+    }
+  }
+  .container {
+display: grid;
+grid-template-columns: repeat(2, 350px); /* har card ki fix width */
+gap: 20px;
+justify-content: center; /* poore grid ko center me laane ke liye */
+}
